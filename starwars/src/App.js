@@ -1,17 +1,9 @@
 import React from 'react';
 import './App.css';
+import AppDivStyling from './components/Styling components/AppDivStyling';
+import AppImgStyling from './components/Styling components/AppImgStyling';
 import Logo from './Logo.jpg';
 import Characters from './components/Character components/Characters';
-import styled from 'styled-components'
-
-const Styling = styled.div`
-  display: flex;
-  justify-content: center;
-  align-item: center;
-`;
-const Img = styled.img`
-  width: 5%;
-`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -23,10 +15,10 @@ const App = () => {
 
   return (
     <div className='App'>
-      <Styling>
-        <Img alt='logo' src={Logo} />
+      <AppDivStyling>
+        <AppImgStyling alt='logo' src={Logo} />
         <h1 className='Header'>Starwar's Characters</h1>
-      </Styling>
+      </AppDivStyling>
       <Characters />
     </div>
   );

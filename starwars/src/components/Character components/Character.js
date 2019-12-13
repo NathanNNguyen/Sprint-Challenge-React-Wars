@@ -1,19 +1,13 @@
 import React, { useState } from 'react';
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-import styled from 'styled-components';
-
-const Button = styled.div`
-  margin: 2rem;
-  padding: 1%;
-  width: 40%;
-`;
+import CharacterStyling from '../Styling components/CharacterStyling';
 
 const Character = ({ mass, height, name, gender, birthYear, skinColor, hairColor }) => {
   const [dropdownOpen, setOpen] = useState(false);
   const toggle = () => setOpen(!dropdownOpen);
 
   return (
-    <Button>
+    <CharacterStyling>
       <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
         <DropdownToggle caret>{name}</DropdownToggle>
         <DropdownMenu>
@@ -26,7 +20,7 @@ const Character = ({ mass, height, name, gender, birthYear, skinColor, hairColor
           <DropdownItem>Mass: {mass}</DropdownItem>
         </DropdownMenu>
       </ButtonDropdown>
-    </Button>
+    </CharacterStyling>
   );
 }
 
