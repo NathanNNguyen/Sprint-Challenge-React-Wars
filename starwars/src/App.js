@@ -22,10 +22,10 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
+    <div className='App'>
       <Styling>
-        <Img alt="logo" src={Logo} />
-        <h1 className="Header">Starwar's Characters</h1>
+        <Img alt='logo' src={Logo} />
+        <h1 className='Header'>Starwar's Characters</h1>
       </Styling>
       <Characters />
     </div>
