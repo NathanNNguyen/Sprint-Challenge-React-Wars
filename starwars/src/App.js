@@ -1,5 +1,9 @@
 import React from 'react';
 import './App.css';
+import AppDivStyling from './components/Styling components/AppDivStyling';
+import AppImgStyling from './components/Styling components/AppImgStyling';
+import Logo from './Logo.jpg';
+import Characters from './components/Character components/Characters';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -10,8 +14,12 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
+    <div className='App'>
+      <AppDivStyling>
+        <AppImgStyling alt='logo' src={Logo} />
+        <h1 className='Header'>Starwar's Characters</h1>
+      </AppDivStyling>
+      <Characters />
     </div>
   );
 }
