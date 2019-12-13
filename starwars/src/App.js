@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Characters from './components/Characters';
+import Characters from './components/Character components/Characters';
 
 
 const App = () => {
@@ -13,7 +13,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <h1 className="Header">Starwar's Characters</h1>
+      <Characters />
     </div>
   );
 }
