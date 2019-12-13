@@ -8,10 +8,8 @@ const Button = styled.div`
   width: 40%;
 `;
 
-
 const Character = ({ mass, height, name, gender, birthYear, skinColor, hairColor }) => {
   const [dropdownOpen, setOpen] = useState(false);
-
   const toggle = () => setOpen(!dropdownOpen);
 
   return (
